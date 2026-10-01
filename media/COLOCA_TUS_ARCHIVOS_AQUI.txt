@@ -1,0 +1,3 @@
+Copia aquí tus capturas y videos.
+Después escribe sus rutas (por ejemplo media/flowy-inicio.png) en proyectos.js.
+Las imágenes y los videos reales no vienen incluidos.

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Daniel Iuit. Proyectos personales y desarrollo de páginas web sencillas para pequeños negocios.">
+  <title>Daniel Iuit · Desarrollo web</title>
+  <!-- Esta línea conecta el HTML con el archivo de estilos. -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Edita proyectos.js para añadir fotos, videos y enlaces a tus demos. -->
+  <script src="proyectos.js" defer></script>
+  <script src="galeria.js" defer></script>
+</head>
+<body>
+  <a class="saltar" href="#contenido">Ir al contenido</a>
+
+  <header class="cabecera contenedor">
+    <a class="marca" href="#inicio" aria-label="Daniel Iuit, inicio">di<span>.</span></a>
+    <nav aria-label="Navegación principal">
+      <a href="#proyectos">Proyectos</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#contacto">Hablemos <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+
+  <main id="contenido">
+    <!-- 1. Presentación: cambia estos textos para darles tu propia voz. -->
+    <section class="presentacion contenedor" id="inicio" aria-labelledby="titulo">
+      <div class="presentacion-texto">
+        <p class="etiqueta"><span class="punto" aria-hidden="true"></span> DANIEL IUIT · DESARROLLO WEB</p>
+        <h1 id="titulo">Una idea.<br>Una página.<br><em>Tu siguiente paso.</em></h1>
+        <p class="introduccion">Creo páginas sencillas para presentar pequeños negocios en internet. Estoy iniciando mi camino como desarrollador web y construyendo mi portafolio con proyectos personales.</p>
+        <div class="acciones">
+          <a class="boton" href="#proyectos">Ver mis proyectos <span aria-hidden="true">↓</span></a>
+          <a class="enlace" href="#contacto">Cuéntame tu idea <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+      <!-- Elemento decorativo: no es la captura de un trabajo realizado. -->
+      <div class="ilustracion" aria-hidden="true">
+        <div class="orbita orbita-uno"></div>
+        <div class="orbita orbita-dos"></div>
+        <div class="figura">di<span>.</span></div>
+        <span class="nota nota-superior">DE LA IDEA</span>
+        <span class="nota nota-inferior">A LA PANTALLA ↗</span>
+      </div>
+    </section>
+
+    <!-- 2. Proyectos: los botones llevan al código real en GitHub. -->
+    <section class="seccion contenedor" id="proyectos" aria-labelledby="titulo-proyectos">
+      <div class="encabezado-seccion">
+        <div><p class="etiqueta">01 / EXPLORAR Y CONSTRUIR</p><h2 id="titulo-proyectos">Proyectos personales<span>.</span></h2></div>
+        <p>Una selección de lo que estoy creando y aprendiendo.</p>
+      </div>
+      <div class="proyectos">
+        <article class="proyecto" data-proyecto="flowy">
+          <div class="proyecto-meta"><span>01 / FRONTEND</span><span class="insignia">Personal</span></div>
+          <div class="galeria" data-galeria="flowy" role="region" aria-label="Galería de Flowy">
+            <div class="galeria-vacia"><span class="galeria-monograma" aria-hidden="true">F.</span><p>Flowy</p><span>Vista previa próximamente</span></div>
+          </div>
+          <h3>Flowy</h3>
+          <p>Proyecto de interfaz para una aplicación de streaming. El código está disponible en mi GitHub.</p>
+          <ul class="tecnologias" aria-label="Tecnologías de Flowy"><li>TypeScript</li><li>Next.js</li></ul>
+          <div class="enlaces-proyecto">
+            <a class="enlace-proyecto enlace-demo" data-demo="flowy" hidden>Ver proyecto <span aria-hidden="true">↗</span></a>
+            <a class="enlace-proyecto" href="https://github.com/yossdan/Flowy">Ver código de Flowy <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+        <article class="proyecto proyecto-clima" data-proyecto="clima">
+          <div class="proyecto-meta"><span>02 / JAVASCRIPT</span><span class="insignia">Personal</span></div>
+          <div class="galeria" data-galeria="clima" role="region" aria-label="Galería de Clima">
+            <div class="galeria-vacia"><span class="galeria-monograma" aria-hidden="true">C.</span><p>Clima</p><span>Vista previa próximamente</span></div>
+          </div>
+          <h3>Clima</h3>
+          <p>Proyecto personal en JavaScript. Un espacio para practicar y seguir desarrollando mis habilidades.</p>
+          <ul class="tecnologias" aria-label="Tecnologías de Clima"><li>JavaScript</li></ul>
+          <div class="enlaces-proyecto">
+            <a class="enlace-proyecto enlace-demo" data-demo="clima" hidden>Ver proyecto <span aria-hidden="true">↗</span></a>
+            <a class="enlace-proyecto" href="https://github.com/yossdan/Clima">Ver código de Clima <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 3. Servicio que puedes ofrecer sin prometer sistemas complejos. -->
+    <section class="seccion contenedor" id="servicios" aria-labelledby="titulo-servicios">
+      <div class="encabezado-seccion">
+        <div><p class="etiqueta">02 / LO QUE PODEMOS CREAR</p><h2 id="titulo-servicios">Lo esencial para tu negocio<span>.</span></h2></div>
+      </div>
+      <div class="servicios">
+        <article><span class="numero">01</span><h3>Una presentación clara</h3><p>Una página adaptable a celular con tu historia, servicios, menú o catálogo informativo.</p></article>
+        <article><span class="numero">02</span><h3>Todo en un lugar</h3><p>Fotografías autorizadas, horarios, ubicación y la información que tus visitantes necesitan.</p></article>
+        <article><span class="numero">03</span><h3>Contacto directo</h3><p>Enlaces para solicitar información, citas o cotizaciones, con confirmación manual de tu negocio.</p></article>
+      </div>
+      <p class="aclaracion">Antes de iniciar, acordamos alcance, precio, plazo, dominio y alojamiento.</p>
+    </section>
+
+    <!-- 4. Contacto: el botón abre el programa de correo del visitante. -->
+    <section class="contacto contenedor" id="contacto" aria-labelledby="titulo-contacto">
+      <p class="etiqueta">03 / EMPECEMOS UNA CONVERSACIÓN</p>
+      <h2 id="titulo-contacto">¿Qué te gustaría<br><em>llevar a la web?</em></h2>
+      <p>Cuéntame de tu negocio y revisamos qué puede incluir tu página.</p>
+      <a class="boton boton-claro" href="mailto:danielasphalt8@gmail.com?subject=Consulta%20sobre%20una%20p%C3%A1gina%20web">Escríbeme <span aria-hidden="true">↗</span></a>
+      <a class="correo" href="mailto:danielasphalt8@gmail.com">danielasphalt8@gmail.com</a>
+    </section>
+  </main>
+
+  <footer class="pie contenedor">
+    <p>Daniel Yosef Iuit Can</p>
+    <a href="https://github.com/yossdan">Mi GitHub <span aria-hidden="true">↗</span></a>
+  </footer>
+
+  <!-- Se abre al hacer clic en una captura. Escape o Cerrar la cierran. -->
+  <dialog class="visor" id="visor-imagen" aria-labelledby="visor-titulo">
+    <div class="visor-cabecera">
+      <p id="visor-titulo">Vista del proyecto</p>
+      <button class="visor-cerrar" type="button" aria-label="Cerrar imagen ampliada">Cerrar <span aria-hidden="true">×</span></button>
+    </div>
+    <img id="visor-foto" alt="">
+  </dialog>
+</body>
+</html>
